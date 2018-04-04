@@ -6,6 +6,13 @@ const app = express();
 app.use(bodyParser.json()); // [Q] .json()
 app.use(bodyParser.urlencoded({ extended: false })); // [Q] why need to .urlencoded()
 
+// [To configure the server project to also serve up the react project]
+//add the path module
+import path from "path";
+// get reference to the client build directory
+const staticFiles = express.static(path.join(_dirname, "../client-app/build"));
+//pass the static files (react app) to the express app
+app.use(staticFiles);
 const router = express.Router();
 router.get("/", (req, res) => {
   res.status(200);
