@@ -7,6 +7,10 @@ app.use(bodyParser.json()); // [Q] .json()
 app.use(bodyParser.urlencoded({ extended: false })); // [Q] why need to .urlencoded()
 
 const router = express.Router();
+router.get("/", (req, res) => {
+  res.status(200);
+  res.json("you are at the home page");
+});
 router.get("/cities", (req, res) => {
   const cities = [
     { name: "NYC", population: 1111 },
