@@ -16,5 +16,10 @@
   },
   "scripts": {
     "start": "nodemon -r babel-register server.js"
+  },
+  "babelComment": "added babel config",
+  "babel": {
+    "presets": ["env", "stage-0"],
+    "plugins": ["transform-runtime"]
   }
 }
