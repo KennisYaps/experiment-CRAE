@@ -1,0 +1,8 @@
+{
+  "name": "CRAE",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/yappps/experiment-CRAE.git",
+  "author": "yappps <yapyuanxin@gmail.com>",
+  "license": "MIT"
+}

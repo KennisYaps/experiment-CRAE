@@ -1,0 +1,18 @@
+{
+  "name": "client-app",
+  "version": "0.1.0",
+  "private": true,
+  "proxyComment" : "Add a proxy entry to the package.json file so that local fetch/api calls from the client, will get directed to the server project.",
+  "proxy": "http://localhost:3001",
+  "dependencies": {
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
