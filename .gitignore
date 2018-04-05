@@ -1,0 +1,21 @@
+#to prevent committing node_modules and other files to your repo.
+
+# dependencies
+node_modules
+
+# insert the code below to tell git to IGNORE these node_modules which contains the downloaded dependencies
+server/node_modules
+client-app/node_modules
+
+# testing
+coverage
+
+# production
+build
+
+# misc
+.DS_Store
+.yarnclean
+npm-debug.log
+yarn-error.log
+*.rdb
