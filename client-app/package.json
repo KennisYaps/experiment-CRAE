@@ -2,8 +2,9 @@
   "name": "client-app",
   "version": "0.1.0",
   "private": true,
-  "proxyComment" : "Add a proxy entry to the package.json file so that local fetch/api calls from the client, will get directed to the server project.",
   "proxy": "http://localhost:3001",
+  "proxy-Comment":
+    "Add a proxy entry to the package.json file so that local fetch/api calls from the client, will get directed to the server project.",
   "dependencies": {
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
