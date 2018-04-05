@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false })); // [Q] why need to .urlenco
 //add the path module
 import path from "path";
 // get reference to the client build directory
-const staticFiles = express.static(path.join(_dirname, "../client-app/build"));
+const staticFiles = express.static(path.join(__dirname, "../client-app/build"));
 //pass the static files (react app) to the express app
 app.use(staticFiles);
 const router = express.Router();
