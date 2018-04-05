@@ -9,13 +9,13 @@
     "concurrently": "^3.5.1"
   },
   "scripts": {
-    "install": "(cd client && yarn) && (cd server && yarn)",
+    "install": "(cd client-app && yarn) && (cd server && yarn)",
     "start":
-      "concurrently \"cd client && PORT=3000 yarn start\" \"cd server && PORT=3001 yarn start\"",
+      "concurrently \"cd client-app && PORT=3000 yarn start\" \"cd server && PORT=3001 yarn start\"",
     "scripts-Comment":
       "scripts.start will start both the client and server projects TOGETHER on SEPARATE ports.  scripts.install will enable us to pull down from git and run yarn on the command line from the root dir, saving us from having to go into each project individually",
     "build":
-      "concurrently \"cd client && yarn build\" \"cd server && yarn build\"",
+      "concurrently \"cd client-app && yarn build\" \"cd server && yarn build\"",
     "build-Comment": "build both the client and server projects",
     "start:prod": "cd server && yarn start:prod",
     "start:prod-Comment": "launch the start:prod command from the root project",
